@@ -1,0 +1,116 @@
+body {
+	background: ;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;'
+	background-repeat: no-repeat;
+	height: 100vh;	
+}
+.wrapper {
+	padding-top: 50px;
+}
+.menu-area {
+	position: relative;
+	width: calc(100% - 160px);
+	margin: 0 auto;
+	background-color: #262626;
+	padding: 10px 0;
+	text-align: center;
+	z-index: 1;
+	font-family: 'Oswald', sans-serif;
+}
+.menu-area li {
+	list-style: none;
+	display: inline-block;
+}
+.menu-area a{
+	color: #fff;
+	text-decoration: none;
+	z-index: 1;
+	position: relative;
+	font-size: 16px;
+	padding: 0 25px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.menu-area a:after {
+	position: absolute;
+	transform: translateY(-50%) rotate(25deg);
+	left: 100%;
+	top: 50%;
+	background-color: #fff;
+	height: 80%;
+	width: 1px;
+	content: '';
+}
+.last-one:after {
+	width: 0 !important;
+}
+.menu-area:before {
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 0;
+	border-top: 10px solid #333;
+	border-right: 20px solid #333;
+	border-left: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+.menu-area:after {
+	position: absolute;
+	content: '';
+	top: 100%;
+	right: 0;
+	border-top: 10px solid #333;
+	border-left: 20px solid #333;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+@media only screen and (max-width: 600px){
+	.menu-area{
+		width: calc(100% - 60px)
+	}
+	.menu-area li {
+		display: block;
+	}
+	.menu-area a:after {
+		background: transparent;
+	}
+}
+
+.news {
+	background-color: grey;
+
+ 	position: absolute;
+ 	left: 50%;
+
+	padding-top: 50px;
+	padding-right: 130px;
+	padding-left: 130px;
+	padding-bottom: 50px;
+
+	color: white;
+	position: center;
+}
+
+.featured-items {
+	background-color: lightgrey;
+
+	margin-top: 175px;
+	margin-right: 400px;
+	margin-left: 400px;
+	margin-bottom: 100px;
+
+	padding-top: 50px;
+	padding-right: 130px;
+	padding-left: 130px;
+	padding-bottom: 50px;
+
+	color: black;
+	position: center;
+}
+
+.header {
+	position: center;
+}
